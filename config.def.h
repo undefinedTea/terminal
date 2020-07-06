@@ -5,8 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
-static int borderpx = 2;
+static char *font = "Dank Mono:pixelsize=13";
+static int borderpx = 1;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -65,7 +65,7 @@ static unsigned int blinktimeout = 800;
 /*
  * thickness of underline and bar cursors
  */
-static unsigned int cursorthickness = 2;
+static unsigned int cursorthickness = 1;
 
 /*
  * bell volume. It must be a value between -100 and 100. Use 0 for disabling
@@ -93,44 +93,29 @@ char *termname = "st-256color";
  */
 unsigned int tabspaces = 8;
 
-/* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-	/* 8 normal colors */
-	"black",
-	"red3",
-	"green3",
-	"yellow3",
-	"blue2",
-	"magenta3",
-	"cyan3",
-	"gray90",
-
-	/* 8 bright colors */
-	"gray50",
-	"red",
-	"green",
-	"yellow",
-	"#5c5cff",
-	"magenta",
-	"cyan",
-	"white",
-
-	[255] = 0,
-
-	/* more colors can be added after 255 to use with DefaultXX */
-	"#cccccc",
-	"#555555",
+  "#2d2d2d", /* base00 */
+  "#f2777a", /* base08 */
+  "#99cc99", /* base0B */
+  "#ffcc66", /* base0A */
+  "#6699cc", /* base0D */
+  "#cc99cc", /* base0E */
+  "#66cccc", /* base0C */
+  "#d3d0c8", /* base05 */
+  "#747369", /* base03 */
+  "#f99157", /* base09 */
+  "#393939", /* base01 */
+  "#515151", /* base02 */
+  "#a09f93", /* base04 */
+  "#e8e6df", /* base06 */
+  "#d27b53", /* base0F */
+  "#f2f0ec", /* base07 */
 };
 
-
-/*
- * Default colors (colorname index)
- * foreground, background, cursor, reverse cursor
- */
 unsigned int defaultfg = 7;
 unsigned int defaultbg = 0;
-static unsigned int defaultcs = 256;
-static unsigned int defaultrcs = 257;
+static unsigned int defaultcs = 13;
+static unsigned int defaultrcs = 0;
 
 /*
  * Default shape of cursor
@@ -139,7 +124,7 @@ static unsigned int defaultrcs = 257;
  * 6: Bar ("|")
  * 7: Snowman ("☃")
  */
-static unsigned int cursorshape = 2;
+static unsigned int cursorshape = 4;
 
 /*
  * Default columns and rows numbers

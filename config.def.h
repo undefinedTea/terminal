@@ -1,6 +1,6 @@
 /* See LICENSE file for copyright and license details. */
 
-static char *font = "Dank Mono:pixelsize=13";
+static char *font = "Dank Mono:size=15";
 static int borderpx = 1;
 
 static char *shell = "/bin/sh";

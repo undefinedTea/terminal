@@ -30,7 +30,7 @@ static int bellvolume = 0;
 char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
-float alpha = 0.8;
+float alpha = 0.9;
 
 static const char *colorname[] = {
   "#2d2d2d",

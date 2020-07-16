@@ -1,7 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 
 static char *font = "Dank Mono:size=15";
-static int borderpx = 1;
+static int borderpx = 13;
 
 static char *shell = "/bin/sh";
 char *utmp = NULL;
@@ -75,13 +75,13 @@ static unsigned int mousebg = 0;
 static unsigned int defaultattr = 11;
 
 static MouseShortcut mshortcuts[] = {
-  { Button4,              XK_NO_MOD,      "\031" },
-  { Button5,              XK_NO_MOD,      "\005" },
+  // { Button4,              XK_NO_MOD,      "\031" },
+  // { Button5,              XK_NO_MOD,      "\005" },
 };
 
 MouseKey mkeys[] = {
-  { Button4,              ShiftMask,      kscrollup,      {.i =  1} },
-  { Button5,              ShiftMask,      kscrolldown,    {.i =  1} },
+  { Button4,              XK_NO_MOD,      kscrollup,      {.i =  1} },
+  { Button5,              XK_NO_MOD,      kscrolldown,    {.i =  1} },
 };
 
 #define MODKEY Mod1Mask
